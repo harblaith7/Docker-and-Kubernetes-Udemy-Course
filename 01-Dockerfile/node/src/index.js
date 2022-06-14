@@ -38,3 +38,6 @@ app.listen(post, () => {
 
 // BIND MOUNT AND VOLUMES
 // docker run -p 3001:3000 -v $(pwd):/usr/src/app -v /usr/src/app/node_modules nodeappv2:1
+
+// DIFFERENT DOCKERFILE NAME
+// docker build -t lala -f Dockerfile.dev .
