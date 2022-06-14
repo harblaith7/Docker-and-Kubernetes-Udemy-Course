@@ -2,14 +2,14 @@ const express = require("express");
 
 const app = express();
 
-const port = 3000;
+const post = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello World!!fsdf!! my friend");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(post, () => {
+  console.log("Now running on PORT " + post);
 });
 
 // TO VIEW ALL IMAGES
@@ -35,3 +35,6 @@ app.listen(port, () => {
 
 // REMOVE CONTAINER
 // docker rm <container-name>
+
+// BIND MOUNT AND VOLUMES
+// docker run -p 3001:3000 -v $(pwd):/usr/src/app -v /usr/src/app/node_modules nodeappv2:1

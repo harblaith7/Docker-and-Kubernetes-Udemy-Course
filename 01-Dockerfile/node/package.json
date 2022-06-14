@@ -1,15 +1,16 @@
 {
-  "name": "node",
+  "name": "nodeapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node ./src/index",
+    "start:dev": "nodemon ./src/index"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
