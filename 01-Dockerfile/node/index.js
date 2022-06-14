@@ -29,3 +29,9 @@ app.listen(port, () => {
 
 // VIEW ALL CONTAINERS
 // docker ps
+
+// STOP OR KILL
+// docker (stop/kill) <container-name>
+
+// REMOVE CONTAINER
+// docker rm <container-name>
