@@ -41,3 +41,6 @@ app.listen(post, () => {
 
 // DIFFERENT DOCKERFILE NAME
 // docker build -t lala -f Dockerfile.dev .
+
+// DOCKER EXEC
+// docker exec -it my-node-app /bin/sh
