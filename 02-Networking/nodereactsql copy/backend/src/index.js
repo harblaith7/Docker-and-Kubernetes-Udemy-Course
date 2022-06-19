@@ -45,7 +45,7 @@ app.delete("/todos/:id", async (req, res) => {
 });
 
 mongoose.connect(
-  "mongodb://mongoadmin:secret@mongodb:27017/todos-app?authSource=admin",
+  "MONGO-URI",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

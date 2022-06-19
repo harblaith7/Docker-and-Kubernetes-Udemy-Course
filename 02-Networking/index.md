@@ -2,7 +2,7 @@ docker container inspect mongo
 
 docker network create todos-net
 
-docker run --name mongodb -d -p 27017:27017 -v data:/data/db --network todos-net mongo
+docker run --name mongodb -d -v data:/data/db --network todo-net -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
 
 docker run -d --name todoapp --network todo-net -p 8000:8000 todos-app
 
